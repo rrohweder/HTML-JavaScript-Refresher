@@ -5,6 +5,7 @@ html {
 table {
   border-collapse: collapse;
   border: 2px solid rgb(200,200,200);
+  border-top: none;
   letter-spacing: 1px;
   font-size: 0.8rem;
 }
@@ -32,4 +33,18 @@ tr:nth-child(odd) td {
 
 caption {
   padding: 10px;
+}
+
+.show-border {
+    border-top: thin solid black;
+    border-bottom: thin solid black;
+}
+
+ th.show-border:nth-child(2) {
+    border-left: thin solid black; 
+}
+
+th.show-border:last-child {
+    /* works when I use "thick", but not when I use "thin"... */
+    border-right: thick solid black;
 }
