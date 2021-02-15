@@ -1,0 +1,29 @@
+/* test-skills-flexbox.css */
+.grid {
+  display: grid;
+}
+.grid :nth-child(n + 4) {
+  grid-column:span 3;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 200px 200px 200px; /* 1fr 1fr 1fr; */
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 10px;
+
+}
+
+ul.first-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:100px 100px;
+    grid-gap: 10px;
+}
+
+
+
+li {
+    text-align: left;
+    flex-grow: 1;
+}

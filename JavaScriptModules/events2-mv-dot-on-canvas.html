@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Events: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+    </section>
+
+    <canvas width="480" height="320" tabindex="0">
+
+    </canvas>
+
+
+  </body>
+  <script>
+    let canvas = document.querySelector('canvas');
+    let ctx = canvas.getContext('2d');
+
+    function drawCircle(x, y, size) {
+      ctx.fillStyle = 'white';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      ctx.beginPath();
+      ctx.fillStyle = 'black';
+      ctx.arc(x, y, size, 0, 2 * Math.PI);
+      ctx.fill();
+    }
+
+    let x = 50;
+    let y = 50;
+    const size = 30;
+
+    drawCircle(x, y, size);
+
+    // Add your code here
+    document.addEventListener('keydown', logKey);
+    function logKey(e) {
+        switch (e.code) {
+            case "KeyW":
+                circleY("up");
+                drawCircle(x, y, size);
+                break;
+            case "KeyA":arguments
+                circleX("left");
+                drawCircle(x, y, size);
+                break;
+            case "KeyS":arguments
+                circleY("down");
+                drawCircle(x, y, size);
+                break;
+            case "KeyD":arguments
+                circleX("right");
+                drawCircle(x, y, size);
+                break;
+            default: console.log(e.code);
+        }
+    }
+    function circleX(direction) {
+        if (direction==="left") {
+            if (x<=50) {
+                x = 480 - 50;
+            } else {
+                x -= 30;
+            } 
+        } else /* right */ {
+            if (x>=430) {
+                x = 50;
+            } else {
+                x += 30;
+            } 
+        }
+    } 
+    function circleY(direction) {
+        if (direction==="up") {
+            if (y<=80) {
+                y = 320 - 50;
+            } else {
+                y -= 30;
+            } 
+        } else /* down */ {
+            if (y>=250) {
+                y = 50;
+            } else {
+                y += 30;
+            } 
+        }
+    } 
+
+  </script>
+
+</html>

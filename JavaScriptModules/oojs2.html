@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>oojs2: Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
+
+  </body>
+
+    <script>
+/*
+        function Person(first, last, age, gender, interests) {
+        this.name = {
+            first : first,
+            last : last
+        };
+        this.age = age;
+        this.gender = gender;
+        this.interests = interests;
+        this.bio = function() {
+            let theInterests = this.interests.join(', ');
+            alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. ' + (this.gender === 'male'?'He':'She') +' likes ' + theInterests + '.');
+        };
+        this.greeting = function() {
+            alert('Hi! I\'m ' + this.name.first + '.');
+        };
+        }
+
+        let person1 = new Person('Bob', 'Smith', 32, 'female', ['music', 'skiing','scuba','climbing']);
+*/
+// Test your skills: Object-oriented JavaScript
+/*
+function Shape(name, sides, sideLength) {
+  this.name = name;
+  this.sides = sides;
+  this.sideLength = sideLength;
+  // Write your code below here
+  this.calcPerimeter = function() {
+    return ( this.sides * this.sideLength );
+  }
+}    
+let square = new Shape('mySquare', 4, 5);
+square.calcPerimeter();
+triangle = new Shape('myTriangle',3,3);
+triangle.calcPerimeter();
+*/
+/*
+class Shape {
+  constructor(name, sides, sideLength) {
+    this.name = name;
+    this.sides = sides;
+    this.sideLength = sideLength;
+  }
+  calcPerimeter() {
+      return ( this.sides * this.sideLength );
+  };
+}
+square = new Shape('mySquare', 4, 5);
+// square.calcPerimeter();
+triangle = new Shape('myTriangle',3,3);
+// triangle.calcPerimeter();
+*/
+
+
+class Shape {
+  constructor(name, sides, sideLength) {
+    this.name = name;
+    this.sides = sides;
+    this.sideLength = sideLength;
+  }
+  calcPerimeter() {
+      return ( this.sides * this.sideLength );
+  };
+}
+function Shape2(name, sides, sideLength) {
+  new Shape(this, name, sides, sideLength);
+  this.name = name;
+  this.sides = sides;
+  this.sideLength = sideLength;
+  this.calcArea = function() {
+  if (this.sides === 4) {
+    return ( this.sideLength * this.sideLength );
+  } else {
+    let s =  this.sideLength * 3;
+    return (Math.sqrt(s * (s - sideLength) * (s - sideLength) * (s - sideLength) ));
+  }
+}
+}
+let as2 = new Shape2('as2',3,6);
+
+    </script>
+</html>

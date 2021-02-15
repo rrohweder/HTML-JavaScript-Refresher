@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"> /* tell mobile devices to tell the truth about viewport size */
+    <title>Recommended HTML Template</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            max-width: 800px;   
+        }
+        h1 {
+          font-size: calc(1rem + 1.75vw); /* for nice scaling based upon viewport size */
+          margin-block-end: 0.1em; /* maybe just for this demo page */
+        } 
+        h2 {
+            font-size: calc(1rem + 1vw); /* for nice scaling based upon viewport size */
+        }
+        address {
+            display: inline; /* maybe just for this demo page */
+        }
+        header, footer {
+            text-align: left;
+            color: blue;
+        }
+        a {
+            text-decoration: none;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+        ul {
+            list-style-type: none;
+        }
+        
+        li {
+            padding: 0.5em 0em 1em 0em; 
+            font-size: calc(1rem + 0.5vw);
+        }
+        img {
+            padding-left: 2em;
+        }
+        
+        /* @media screen and (min-width: 600px) { whatever: } for responsive options */
+    </style>
+</head>
+<html>
+<body>
+    <div class="container">
+        <div> 
+            <img src="Mozilla-splash-page/firefox-addons120.jpg">
+        </div>
+        <header>
+            <h1>HTML Template</h1>
+            Header likely used on all pages - may contain images, menu, etc.
+        </header>
+    
+        <nav>
+            <ul>
+                <li><a href="#">Menu Item A</a></li>
+                <li><a href="#">Menu Item B</a></li>
+                <li><a href="#">Menu Item C</a></li>
+                <li><a href="#">Menu Item D</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>Section Header</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate.
+                Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet
+                sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula.
+                Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse
+                ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit
+                quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.</p>
+        
+            <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit
+                amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam lorem. Vivamus tristique
+                elit dolor, sed pretium metus suscipit vel. Mauris ultricies lectus sed lobortis finibus. Vivamus eu urna eget velit
+                cursus viverra quis vestibulum sem. Aliquam tincidunt eget purus in interdum. Cum sociis natoque penatibus et magnis
+                dis parturient montes, nascetur ridiculus mus.</p>
+        </article>
+       <div> </div>
+        <footer>
+            <hr style="width:100%;text-align:left;margin-left:0">
+            <b>Footer</b> <address>1234 Main St., Centerville, OH 12345 - (555) 555-5555</address><br>
+            Likely used on all pages - may contain images, links, etc.
+        </footer>
+</div>
+</body>
+</html>

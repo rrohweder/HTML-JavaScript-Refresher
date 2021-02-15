@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Why Not?</title>
+    
+	<style>
+        .myform {
+            border: 2px solid #000;
+            padding: 20px;
+        }
+
+        input[type="search"], input[type="submit"] {
+            font-size: inherit;
+            padding: 8px;
+        }
+
+        input[type="search"] {
+            color: green;
+            border: 2px solid green;
+        /*
+            border-color: green;
+            border-top: green;
+        */
+            padding-top: 1px;
+            padding-bottom: 1px;
+            position: relative;
+            /* bottom: -5px; */
+        }
+        #fldSearch {
+            height: 40px;
+            font-size: 20px;
+            color: tan;
+        }
+
+        input[type="submit"] {
+            background-color: rebeccapurple;
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+	</style>
+  </head>
+  <body>
+      <p>This is above the input form.</p>
+        <form method="post" action="" class="myform">
+            <div>
+                <label for="fldSearch">Keywords</label>
+                <input type="search" placeholder="ABCD" value="" id="fldSearch" name="keywords">
+                <input type="submit" name="btnSubmit" value="Search">
+            </div>
+        </form>
+  </body>
+</html>
+ 

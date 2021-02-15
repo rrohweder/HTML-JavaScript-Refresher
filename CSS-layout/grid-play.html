@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid Play</title>
+    <meta charset="utf-8">
+    <style>
+        body { 
+            display: grid;
+            grid-gap: 1em;
+            border: 2px solid red;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-columns: 12em 0.75fr;
+        }
+        header {
+            margin-left: 2em;
+            grid-column: span 2;
+            text-align: center;
+        }
+        nav {
+            font-size: 1.5rem;
+            color: green;
+            margin-left: 0em;
+        }
+        footer {
+            grid-column: span 2;
+            margin-left: 2em;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 5px 5px 25px 0px;
+            padding-bottom: 15px;
+            margin-bottom: 3px;
+        }
+        li {
+            display: block;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-align: center;
+            background-color: lightsteelblue;
+            margin: 0px 5px 10px 0px;
+         }
+         a {
+             text-decoration: none;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Freehand Playing with Grid</h1>
+    </header>
+    <nav><p>
+        <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        </ul>
+    </p>
+    </nav>
+    <article>
+        <h2>First Paragraph</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Second Paragraph</h2>
+        <p>Pellentesque elit eget gravida cum sociis natoque. Mattis ullamcorper velit sed ullamcorper morbi. Sed tempus urna et pharetra pharetra massa massa ultricies. Enim tortor at auctor urna nunc id cursus. Nunc eget lorem dolor sed viverra ipsum. Interdum consectetur libero id faucibus. Dapibus ultrices in iaculis nunc sed augue lacus. Fusce id velit ut tortor pretium viverra suspendisse potenti. Tellus at urna condimentum mattis. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Eget duis at tellus at. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Aliquam nulla facilisi cras fermentum odio eu. Non odio euismod lacinia at quis risus sed vulputate. Imperdiet sed euismod nisi porta lorem mollis aliquam. Lectus arcu bibendum at varius. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Sed nisi lacus sed viverra tellus in hac. Elit eget gravida cum sociis natoque penatibus et magnis.</p>
+        <h2>Third Paragraph</h2>
+        <p>Magna fringilla urna porttitor rhoncus dolor purus non. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Id diam maecenas ultricies mi eget mauris pharetra et. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Eu consequat ac felis donec et odio pellentesque diam volutpat. Sit amet est placerat in egestas erat imperdiet sed euismod. Molestie a iaculis at erat. Ullamcorper eget nulla facilisi etiam dignissim. Interdum velit euismod in pellentesque massa placerat duis ultricies lacus. Eget arcu dictum varius duis at consectetur lorem. Dolor sit amet consectetur adipiscing. Tortor at risus viverra adipiscing at in tellus integer. Odio eu feugiat pretium nibh ipsum consequat nisl vel. Donec adipiscing tristique risus nec feugiat in. Donec adipiscing tristique risus nec. Tortor id aliquet lectus proin nibh nisl condimentum. Sodales ut eu sem integer vitae justo eget magna.</p>
+    </article>
+    <footer>
+        <h2>The Footer Co. 1234 Main St. Boston, MA 23124</h2>
+    </footer>
+</body>
+</html>

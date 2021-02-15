@@ -1,0 +1,49 @@
+/* General setup */
+@font-face {
+    font-family: 'acmeregular';
+    src: url('fonts/acme-regular-webfont.woff2') format('woff2'),
+         url('fonts/acme-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'andika_new_basicregular';
+    src: url('fonts/andikanewbasic-r-webfont.woff2') format('woff2'),
+         url('fonts/andikanewbasic-r-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+  font-size: 10px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+  font-family: 'acmeregular', serif;
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-family: 'acmeregular', serif;
+  font-size: 3.0rem;
+}
+
+p {
+  font-family: 'andika_new_basicregular', serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+}

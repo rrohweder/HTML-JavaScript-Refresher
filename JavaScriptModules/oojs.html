@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
+
+  </body>
+
+    <script>
+        const person = {
+            name: ['Bob', 'Smith'],
+            age: 32,
+            gender: 'male',
+            interests: ['music', 'skiing'],
+            bio: function() {
+                alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+            },
+            greeting: function() {
+                alert('Hi! I\'m ' + this.name[0] + '.');
+            }
+        };
+
+        let bandInfo;
+
+// Put your code here
+
+// Object basics 2
+bandInfo = {
+   name:"Stones",
+   nationality:"British",
+   Genre:"Rock",
+   members:5,
+   formed:1960,
+   split:2007,
+   albums:[{name:"The Stones",released:1961},
+           {name:"2nd Album",released:1964},
+           {name:"Third Album",released:1966}]
+};
+console.log("bandInfo: " + bandInfo);
+// end Object basics 2
+
+// From Object basics 3:
+let cat = {
+  name : 'Bertie',
+  breed : 'Cymric',
+  color : 'white',
+  greeting: catGreeting
+}
+
+let cat2 = {
+  name : 'Blackie',
+  breed : 'Coal',
+  color : 'black',
+  greeting: catGreeting
+}
+
+function catGreeting() {
+    console.log(`Hello sure said ${this.name} the ${this.breed}!`);
+}
+
+cat.greeting();
+cat2.greeting();
+// end Object basics 3
+
+// Don't edit the code below here
+
+let para1 = document.createElement('p');
+para1.textContent = bandInfo;
+section.appendChild(para1);
+      
+    </script>
+</html>

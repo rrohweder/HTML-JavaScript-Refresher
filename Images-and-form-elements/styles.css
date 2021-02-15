@@ -1,0 +1,13 @@
+img {
+    object-fit: cover;
+    max-width: 100%
+}
+
+.box {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    display: flex;
+    width: 600px;
+    height: 330px;
+    border: solid black 10px;
+}
